@@ -1,5 +1,6 @@
 import React from 'react';
 import { Plus_Jakarta_Sans } from 'next/font/google';
+import Providers from './components/providers';
 import './globals.css';
 
 // Налаштування шрифту Plus Jakarta Sans на використання латинського набору
@@ -12,7 +13,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={font.className}>{children}</body>
+      <body className={font.className}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
