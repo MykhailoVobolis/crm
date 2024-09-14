@@ -11,12 +11,13 @@ export default async function Page({}: PageProps) {
   return (
     <DashboardCard label="Categories of companies">
       <div className="grid grid-cols-12 gap-3 pb-5 px-5">
-        {data.map(({ categoryId, categoryTitle, count }) => (
+        {data.map(({ categoryId, categoryTitle, count }, index) => (
           <div key={categoryId} className="col-span-3">
             <StatCard
               type={StatCardType.Dark}
               label={categoryTitle}
               counter={count}
+              gradientIndex={index}
             />
           </div>
         ))}
