@@ -1,7 +1,14 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import { Plus_Jakarta_Sans } from 'next/font/google';
 import Providers from './components/providers';
 import './globals.css';
+
+// Додавання title та description проєкту
+export const metadata = {
+  title: 'Tru Scape',
+  description: 'Super description',
+};
 
 // Налаштування шрифту Plus Jakarta Sans на використання латинського набору
 const font = Plus_Jakarta_Sans({ subsets: ['latin'] });

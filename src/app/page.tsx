@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main>
-      <h1 className="text-xl">Home page</h1>
+    <main className="flex flex-col items-center content-center pt-72 gap-2 h-lvh bg-violet-100">
+      <h1 className="text-3xl font-semibold">Home page</h1>
       <p>
         Go to{' '}
         <Link
